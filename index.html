@@ -1,0 +1,1005 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Athira C.K. Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Gloock&family=Gochi+Hand&display=swap">
+<style>
+/* Layout: a personal search-desk on ivory paper. Editorial serif headlines, a strong 12-col grid,
+   sticky-note proof points, tilted keyword tags as the one playful moment, SERP details as subject vernacular. */
+:root{
+  --paper:#FBF7EE;
+  --paper-2:#F3EDE0;
+  --ink:#1E1C19;
+  --ink-2:#4F4A42;
+  --ink-3:#6E675C;
+  --rule:#DCD3C2;
+  --cobalt:#2E48F0;
+  --cobalt-ink:#2238C9;
+  --yellow:#FFD84A;
+  --orange:#FF8A3D;
+  --coral:#FF5E4F;
+  --lilac:#CDBEFF;
+  --mint:#A6E8C8;
+  --pink:#FFB8D2;
+  --on-accent:#1E1C19;
+  --dot:rgba(30,28,25,.07);
+  --serp-link:#1A0DAB;
+  --serp-url:#2E6B3A;
+  --display:"Gloock", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --body:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --hand:"Gochi Hand", "Bradley Hand", "Comic Sans MS", cursive;
+  --step--1:clamp(.8rem,.78rem + .1vw,.86rem);
+  --step-0:clamp(1rem,.97rem + .15vw,1.08rem);
+  --step-1:clamp(1.2rem,1.1rem + .4vw,1.4rem);
+  --step-2:clamp(1.5rem,1.3rem + .9vw,2rem);
+  --step-3:clamp(2rem,1.6rem + 1.8vw,3rem);
+  --step-4:clamp(2.6rem,1.8rem + 3.6vw,5.2rem);
+  --wrap:1180px;
+  --gutter:clamp(16px,4vw,40px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#18171A; --paper-2:#222126; --ink:#F2EDE3; --ink-2:#CFC8BB; --ink-3:#A79F92; --rule:#3A3840;
+    --cobalt:#7B8CFF; --cobalt-ink:#9AA7FF; --dot:rgba(242,237,227,.06);
+    --serp-link:#9DB3FF; --serp-url:#8FCB9B; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#18171A; --paper-2:#222126; --ink:#F2EDE3; --ink-2:#CFC8BB; --ink-3:#A79F92; --rule:#3A3840;
+  --cobalt:#7B8CFF; --cobalt-ink:#9AA7FF; --dot:rgba(242,237,227,.06);
+  --serp-link:#9DB3FF; --serp-url:#8FCB9B; color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:var(--step-0);line-height:1.6;font-variation-settings:"wdth" 100;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;letter-spacing:-.01em;text-wrap:balance;margin:0}
+p{margin:0}
+.label{font-family:var(--body);font-variation-settings:"wdth" 78;font-weight:650;text-transform:uppercase;letter-spacing:.09em;font-size:var(--step--1);color:var(--ink-3)}
+.hand{font-family:var(--hand);font-size:1.35rem;line-height:1.1}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:8px 12px;z-index:50}
+.skip:focus{left:8px}
+
+/* ---------- header ---------- */
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-size:1.35rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+.stamp{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--yellow);color:var(--on-accent);font-family:var(--body);font-weight:800;font-size:.8rem;letter-spacing:.02em;transform:rotate(-8deg);border:1.5px solid var(--on-accent)}
+.nav{display:flex;gap:clamp(12px,2.4vw,28px);flex-wrap:wrap}
+.nav a{text-decoration:none;font-weight:550;font-size:.98rem;padding-block:4px;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{border-bottom-color:var(--coral)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding-block:clamp(40px,7vw,88px) clamp(36px,5vw,64px);background-image:radial-gradient(var(--dot) 1.2px,transparent 1.2px);background-size:22px 22px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start}
+.hello{display:flex;align-items:center;gap:10px;color:var(--ink-2)}
+.hello svg{flex:none}
+.hero h1{font-size:var(--step-4);margin-top:14px}
+.hero h1 .u{position:relative;white-space:nowrap}
+.hero h1 .u svg{position:absolute;left:-2%;bottom:-.12em;width:104%;height:.32em;overflow:visible}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 58%,var(--yellow) 58%,var(--yellow) 92%,transparent 92%);padding-inline:.06em;color:var(--ink)}
+:root[data-theme="dark"] .hero h1 em{color:var(--ink)}
+.hero-lede{margin-top:22px;max-width:56ch;font-size:var(--step-1);line-height:1.5;color:var(--ink-2)}
+.hero-lede strong{color:var(--ink);font-weight:650}
+.role-line{margin-top:22px;display:flex;flex-wrap:wrap;gap:6px 18px}
+.role-line span{display:inline-flex;align-items:center;gap:8px}
+.role-line span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--coral)}
+.role-line span:nth-child(2)::before{background:var(--cobalt)}
+.role-line span:nth-child(3)::before{background:var(--orange)}
+.ctas{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:650;padding:12px 20px;border:1.5px solid var(--ink);border-radius:10px;background:var(--paper);color:var(--ink);cursor:pointer;font:inherit;font-weight:650}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--coral)}
+.btn .arr{transition:transform .2s}
+.btn:hover .arr{transform:translateX(3px)}
+
+/* tag collage */
+.tags{position:relative;min-height:420px}
+.tag{position:absolute;display:inline-block;font-family:var(--body);font-weight:700;font-variation-settings:"wdth" 88;font-size:clamp(1.05rem,.9rem + .7vw,1.55rem);padding:.32em .7em .36em;border-radius:12px;color:var(--on-accent);border:1.5px solid var(--on-accent);box-shadow:3px 4px 0 var(--on-accent);transform:rotate(var(--r));animation:drop .7s cubic-bezier(.2,1.3,.5,1) both;animation-delay:var(--d);white-space:nowrap}
+.tag:hover{transform:rotate(calc(var(--r) * -1)) scale(1.04)}
+@keyframes drop{from{transform:translateY(-14px) rotate(0deg)}to{transform:translateY(0) rotate(var(--r))}}
+.tags .note{position:absolute;right:2%;bottom:0;color:var(--ink-2);transform:rotate(-4deg);display:flex;align-items:flex-end;gap:6px}
+
+/* proof notes */
+.proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,24px);margin-top:clamp(36px,5vw,60px)}
+.sticky{position:relative;color:var(--on-accent);padding:22px 22px 20px;border-radius:4px 4px 14px 4px;box-shadow:0 1px 0 rgba(0,0,0,.08),0 10px 22px -14px rgba(0,0,0,.35)}
+.sticky:nth-child(1){background:var(--yellow);transform:rotate(-1.2deg)}
+.sticky:nth-child(2){background:var(--lilac);transform:rotate(.8deg) translateY(10px)}
+.sticky:nth-child(3){background:var(--mint);transform:rotate(-.6deg)}
+.sticky .big{font-family:var(--display);font-size:clamp(1.8rem,1.4rem + 1.4vw,2.6rem);white-space:nowrap;line-height:1;font-variant-numeric:tabular-nums}
+.sticky p{margin-top:10px;font-size:.98rem;line-height:1.45}
+.sticky a{font-weight:700;font-size:.92rem;display:inline-block;margin-top:12px}
+.sticky .pin{position:absolute;top:-9px;left:50%;width:46px;height:16px;transform:translateX(-50%) rotate(-3deg);background:color-mix(in srgb,var(--paper) 70%,transparent);border:1px solid rgba(0,0,0,.08)}
+
+/* ---------- serp strip ---------- */
+.serp-strip{border-block:1px solid var(--rule);background:var(--paper-2)}
+.serp-strip .wrap{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:24px;padding-block:28px;align-items:center}
+.serp-strip .hand{color:var(--ink-2)}
+.serp{max-width:640px;font-family:Arial,Helvetica,sans-serif}
+.serp .site{display:flex;align-items:center;gap:10px;font-size:.86rem;color:var(--ink)}
+.serp .fav{width:26px;height:26px;border-radius:50%;background:var(--yellow);color:var(--on-accent);display:grid;place-items:center;font-weight:700;font-size:.66rem;border:1px solid var(--on-accent)}
+.serp .crumb{color:var(--ink-3);font-size:.8rem}
+.serp .t{display:block;margin-top:6px;color:var(--serp-link);font-size:1.25rem;line-height:1.3}
+.serp .d{margin-top:4px;color:var(--ink-2);font-size:.9rem;line-height:1.5}
+
+/* ---------- sections ---------- */
+section.block{padding-block:clamp(56px,8vw,104px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:clamp(28px,4vw,44px)}
+.sec-head h2{font-size:var(--step-3)}
+.sec-head p{max-width:46ch;color:var(--ink-2)}
+.crumbpath{font-size:.86rem;color:var(--serp-url);font-family:Arial,Helvetica,sans-serif}
+
+/* work */
+.work-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(16px,2.2vw,28px)}
+.proj{position:relative;border:1.5px solid var(--ink);border-radius:18px;background:var(--paper);padding:clamp(20px,2.6vw,32px);display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+.proj:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--accent,var(--cobalt))}
+.proj h3{font-size:var(--step-2)}
+.proj .sum{color:var(--ink-2);max-width:58ch}
+.proj .meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink-3)}
+.proj .meta b{color:var(--ink);font-weight:600}
+.proj .go{margin-top:auto;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+.proj .flag{position:absolute;top:-14px;right:22px;background:var(--accent);color:var(--on-accent);border:1.5px solid var(--on-accent);border-radius:8px;padding:2px 10px;font-weight:700;font-size:.8rem;transform:rotate(3deg)}
+.p-recovery{grid-column:span 12;--accent:var(--yellow);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(20px,3vw,40px);align-items:center}
+.p-recovery .txt{display:flex;flex-direction:column;gap:14px;min-width:0}
+.p-citations{grid-column:span 7;--accent:var(--lilac)}
+.p-workflow{grid-column:span 5;--accent:var(--mint)}
+.p-metrics{grid-column:span 12;--accent:var(--orange);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(20px,3vw,40px);align-items:center;background:var(--paper-2);border-style:dashed}
+.p-metrics .txt{display:flex;flex-direction:column;gap:12px;min-width:0}
+
+/* chart */
+.chart{width:100%;height:auto;display:block}
+.chart text{font-family:var(--body);fill:var(--ink-2)}
+.chart .val{font-family:var(--display);fill:var(--ink);font-size:20px}
+.chart .grid{stroke:var(--rule);stroke-width:1}
+.chart .line{stroke:var(--cobalt);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.chart .pt{fill:var(--cobalt);stroke:var(--paper);stroke-width:3}
+.chart .pt.low{fill:var(--coral)}
+.chart .area{fill:var(--cobalt);opacity:.08}
+.chart-note{font-size:.82rem;color:var(--ink-3);margin-top:6px}
+
+/* doc compare */
+.docs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-block:6px}
+.doc{border:1.5px solid var(--rule);border-radius:10px;padding:14px;background:var(--paper)}
+.doc .label{display:block;margin-bottom:10px}
+.doc i{display:block;height:7px;border-radius:4px;background:var(--rule);margin-bottom:6px}
+.doc i.ans{background:var(--lilac);height:12px}
+.doc small{display:block;margin-top:8px;color:var(--ink-3);font-size:.8rem}
+
+/* mini flow */
+.mini-flow{display:flex;flex-direction:column;gap:8px;font-size:.88rem}
+.mini-flow .row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.chip{display:inline-block;border:1.5px solid var(--ink);border-radius:8px;padding:2px 9px;font-weight:600;background:var(--paper)}
+.chip.m{background:var(--mint);color:var(--on-accent);border-color:var(--on-accent)}
+.chip.c{background:var(--cobalt);color:#fff;border-color:var(--cobalt)}
+.mini-flow .arrow{color:var(--ink-3);font-weight:700}
+
+/* tree */
+.tree{font-size:.92rem;line-height:1.7;border-left:2px solid var(--orange);padding-left:16px}
+.tree b{font-weight:700}
+.tree ul{list-style:none;margin:2px 0 6px;padding-left:16px;border-left:1px dashed var(--rule)}
+.tree li::before{content:"└ ";color:var(--ink-3)}
+
+/* stack */
+.stack{border-top:1.5px solid var(--ink)}
+.stack-row{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr) minmax(0,300px);gap:clamp(14px,3vw,40px);padding-block:22px;border-bottom:1px solid var(--rule);align-items:baseline}
+.stack-row h3{font-size:var(--step-1);font-family:var(--body);font-weight:700;font-variation-settings:"wdth" 85;display:flex;align-items:center;gap:10px}
+.stack-row h3 .sw{width:14px;height:14px;border-radius:4px;flex:none;border:1.5px solid var(--on-accent)}
+.stack-row p{color:var(--ink-2)}
+.stack-row .tools{font-size:.88rem;color:var(--ink-3)}
+.also{margin-top:22px;color:var(--ink-2);max-width:70ch}
+.also b{color:var(--ink)}
+
+/* experience */
+.exp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(28px,5vw,72px)}
+.exp-intro h2{font-size:var(--step-3)}
+.exp-intro p{margin-top:16px;color:var(--ink-2);max-width:42ch}
+.exp-intro .hand{margin-top:22px;color:var(--cobalt-ink);transform:rotate(-2deg);display:inline-block}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:16px;padding-block:16px;border-bottom:1px solid var(--rule)}
+.timeline li:first-child{border-top:1.5px solid var(--ink)}
+.timeline .when{font-size:.86rem;color:var(--ink-3);font-variant-numeric:tabular-nums;padding-top:3px}
+.timeline .what b{display:block;font-weight:700}
+.timeline .what span{color:var(--ink-2);font-size:.95rem}
+.timeline li.now .what b::after{content:"now";margin-left:10px;font-family:var(--hand);font-weight:400;color:var(--on-accent);background:var(--yellow);padding:0 8px;border-radius:6px;font-size:1rem}
+
+/* about preview */
+.about-prev{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px);align-items:start}
+.about-prev blockquote{margin:0;font-family:var(--display);font-size:var(--step-2);line-height:1.2;text-wrap:balance}
+.about-prev blockquote::before{content:"";display:block;width:56px;height:6px;background:var(--coral);border-radius:3px;margin-bottom:22px}
+.about-prev .txt{display:flex;flex-direction:column;gap:16px;color:var(--ink-2)}
+.textlink{font-weight:700;color:var(--ink);text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--coral)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:28px;padding:clamp(28px,6vw,72px);position:relative;overflow:hidden}
+.contact h2{font-size:var(--step-4);max-width:14ch}
+.contact p{margin-top:18px;max-width:50ch;opacity:.85;font-size:var(--step-1)}
+.contact-row{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.email-box{display:inline-flex;align-items:center;gap:6px;background:var(--paper);color:var(--ink);border-radius:12px;padding:6px 6px 6px 16px;max-width:100%;flex-wrap:wrap}
+.email-box span{font-weight:650;user-select:all;overflow-wrap:anywhere}
+.email-box button{font:inherit;font-weight:700;border:0;border-radius:8px;background:var(--yellow);color:var(--on-accent);padding:8px 14px;cursor:pointer}
+.contact .btn{background:transparent;color:var(--paper);border-color:var(--paper)}
+.contact .btn:hover{box-shadow:3px 3px 0 var(--yellow)}
+.contact .star{position:absolute;right:clamp(16px,5vw,64px);top:clamp(16px,4vw,48px);width:clamp(60px,10vw,120px);color:var(--yellow)}
+
+/* footer */
+.foot{padding-block:36px 48px;color:var(--ink-3);font-size:.9rem}
+.foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot a{color:var(--ink-2)}
+
+/* ---------- case study pages ---------- */
+.cs-head{padding-block:clamp(36px,6vw,72px) clamp(24px,4vw,40px);border-bottom:1px solid var(--rule)}
+.back{display:inline-flex;gap:8px;text-decoration:none;font-weight:650;color:var(--ink-2)}
+.back:hover{color:var(--ink)}
+.cs-head .crumbpath{margin-top:28px;display:block}
+.cs-head h1{font-size:var(--step-4);margin-top:12px;max-width:18ch}
+.cs-head .dek{margin-top:20px;font-size:var(--step-1);color:var(--ink-2);max-width:60ch;line-height:1.5}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:clamp(28px,4vw,44px);border-top:1.5px solid var(--ink)}
+.facts div{padding:14px 16px 14px 0;border-bottom:1px solid var(--rule)}
+.facts dt{margin:0}
+.facts dd{margin:6px 0 0;font-weight:550}
+.cs-body{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:clamp(20px,5vw,72px);padding-block:clamp(36px,6vw,72px)}
+.cs-toc{position:sticky;top:90px;align-self:start;display:flex;flex-direction:column;gap:8px;font-size:.92rem}
+.cs-toc a{text-decoration:none;color:var(--ink-3)}
+.cs-toc a:hover{color:var(--ink)}
+.prose{max-width:66ch;display:flex;flex-direction:column;gap:18px}
+.prose h2{font-size:var(--step-2);margin-top:26px}
+.prose h2:first-child{margin-top:0}
+.prose p,.prose li{color:var(--ink-2)}
+.prose strong{color:var(--ink)}
+.prose ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
+.prose li::marker{color:var(--coral)}
+.figure{margin:10px 0;border:1.5px solid var(--ink);border-radius:16px;padding:clamp(16px,2.5vw,28px);background:var(--paper)}
+.figure figcaption{margin-top:12px;font-size:.88rem;color:var(--ink-3)}
+.callout{border-radius:14px;padding:18px 20px;color:var(--on-accent)}
+.callout.y{background:var(--yellow)}
+.callout.l{background:var(--lilac)}
+.callout.m{background:var(--mint)}
+.callout.o{background:var(--orange)}
+.callout .label{color:var(--on-accent);opacity:.75}
+.callout p{color:var(--on-accent);margin-top:6px}
+.steps{list-style:none;padding:0;margin:0;counter-reset:s;display:flex;flex-direction:column;gap:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding-block:14px;border-top:1px solid var(--rule)}
+.steps li::before{content:counter(s);font-family:var(--display);font-size:1.6rem;line-height:1;color:var(--cobalt-ink)}
+.steps li b{color:var(--ink);display:block}
+.next{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px;border-top:1.5px solid var(--ink)}
+.next a{text-decoration:none;font-weight:700}
+.next a span{display:block;font-weight:400;font-size:.86rem;color:var(--ink-3)}
+
+/* big flow diagram */
+.flow{display:grid;gap:18px}
+.flow-lane{border:1.5px dashed var(--rule);border-radius:14px;padding:16px}
+.flow-lane > .label{display:block;margin-bottom:12px}
+.flow-row{display:grid;grid-template-columns:minmax(0,1.6fr) auto minmax(0,1fr) auto minmax(0,1.1fr);gap:12px;align-items:center}
+.flow-col{display:flex;flex-direction:column;gap:8px}
+.node{border:1.5px solid var(--ink);border-radius:10px;padding:8px 12px;background:var(--paper);font-size:.9rem;line-height:1.35}
+.node b{display:block}
+.node small{color:var(--ink-3)}
+.node.hub{background:var(--mint);color:var(--on-accent);border-color:var(--on-accent)}
+.node.hub small{color:var(--on-accent);opacity:.75}
+.node.out{background:var(--paper-2)}
+.flow .arrow{font-size:1.4rem;color:var(--ink-3);text-align:center}
+
+/* resume */
+.resume{max-width:860px}
+.resume h2{font-size:var(--step-2);margin-top:44px;padding-bottom:10px;border-bottom:1.5px solid var(--ink)}
+.r-job{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:18px;padding-block:18px;border-bottom:1px solid var(--rule)}
+.r-job .when{color:var(--ink-3);font-size:.88rem;font-variant-numeric:tabular-nums;padding-top:3px}
+.r-job h3{font-family:var(--body);font-size:1.08rem;font-weight:700}
+.r-job h3 span{font-weight:400;color:var(--ink-3)}
+.r-job ul{margin:8px 0 0;padding-left:1.1em;color:var(--ink-2);display:flex;flex-direction:column;gap:5px}
+.r-job li::marker{color:var(--coral)}
+.r-skills{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:8px 18px;padding-top:16px}
+.r-skills dt{font-weight:700}
+.r-skills dd{margin:0;color:var(--ink-2)}
+.r-contact{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:18px;color:var(--ink-2)}
+
+.view[hidden]{display:none!important}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero-grid,.p-recovery,.p-metrics,.exp,.about-prev{grid-template-columns:minmax(0,1fr)}
+  .tags{min-height:0;display:flex;flex-wrap:wrap;gap:12px 10px;padding-top:6px}
+  .tag{position:static;font-size:1.05rem}
+  .tags .note{position:static;width:100%;margin-top:4px}
+  .p-citations,.p-workflow{grid-column:span 12}
+  .stack-row{grid-template-columns:minmax(0,1fr);gap:6px}
+  .cs-body{grid-template-columns:minmax(0,1fr)}
+  .cs-toc{position:static;flex-direction:row;flex-wrap:wrap;gap:6px 16px}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow-row{grid-template-columns:minmax(0,1fr)}
+  .flow .arrow{transform:rotate(90deg)}
+  .serp-strip .wrap{grid-template-columns:minmax(0,1fr);gap:12px}
+}
+@media (max-width:640px){
+  .proof{grid-template-columns:minmax(0,1fr)}
+  .sticky:nth-child(2){transform:rotate(.8deg)}
+  .timeline li,.r-job,.r-skills{grid-template-columns:minmax(0,1fr);gap:4px}
+  .docs{grid-template-columns:minmax(0,1fr)}
+  .facts{grid-template-columns:minmax(0,1fr)}
+  .hero h1 .u{white-space:normal}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Athira C.K., home"><span class="stamp" aria-hidden="true">AC</span>Athira C.K.</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work" data-nav="work">Work</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#resume" data-nav="resume">Resume</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="main">
+
+<!-- ================= HOME ================= -->
+<main class="view" data-view="home" id="home">
+
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="hello hand">
+            <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 3 L19.6 13.4 L30 17 L19.6 20.6 L17 31 L14.4 20.6 L4 17 L14.4 13.4 Z" fill="var(--orange)" stroke="var(--ink)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            hi, I'm Athira
+          </p>
+          <h1 id="hero-h">Getting B2B products <span class="u">found on Google<svg viewBox="0 0 200 16" preserveAspectRatio="none" aria-hidden="true"><path d="M2 10 C 40 3, 90 14, 130 7 S 185 5, 198 9" fill="none" stroke="var(--coral)" stroke-width="4" stroke-linecap="round"/></svg></span> and <em>cited</em> in AI answers.</h1>
+          <p class="hero-lede">I'm an SEO and AEO specialist with <strong>9+ years in search</strong>. Right now I own SEO and AI search for two B2B data products at Turbolab Technologies: <strong>ScrapeHero</strong> and <strong>MetricsCart</strong>.</p>
+          <div class="role-line label">
+            <span>SEO &amp; AEO Specialist</span>
+            <span>B2B SaaS and data products</span>
+            <span>Kochi, India</span>
+          </div>
+          <div class="ctas">
+            <a class="btn primary" href="#work">See the work <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn" href="#resume">Read the resume</a>
+          </div>
+        </div>
+
+        <div class="tags" aria-label="What I work on">
+          <span class="tag" style="--r:-7deg;--d:.05s;top:2%;left:6%;background:var(--yellow)">technical SEO</span>
+          <span class="tag" style="--r:5deg;--d:.12s;top:4%;left:58%;background:var(--lilac)">AEO</span>
+          <span class="tag" style="--r:-3deg;--d:.18s;top:17%;left:26%;background:var(--orange)">topic clusters</span>
+          <span class="tag" style="--r:8deg;--d:.24s;top:19%;left:76%;background:var(--mint)">GEO</span>
+          <span class="tag" style="--r:-9deg;--d:.3s;top:33%;left:2%;background:var(--pink)">link building</span>
+          <span class="tag" style="--r:4deg;--d:.36s;top:35%;left:46%;background:var(--yellow)">intent mapping</span>
+          <span class="tag" style="--r:-4deg;--d:.42s;top:51%;left:12%;background:var(--mint)">schema</span>
+          <span class="tag" style="--r:6deg;--d:.48s;top:52%;left:40%;background:var(--coral)">AI citation tracking</span>
+          <span class="tag" style="--r:-6deg;--d:.54s;top:68%;left:8%;background:var(--lilac)">GA4 + Search Console</span>
+          <p class="note hand">
+            <svg width="40" height="34" viewBox="0 0 40 34" aria-hidden="true"><path d="M36 30 C 26 26, 14 20, 8 6 M8 6 L4 15 M8 6 L16 10" fill="none" stroke="var(--ink-2)" stroke-width="2" stroke-linecap="round"/></svg>
+            the whole stack, crawl to citation
+          </p>
+        </div>
+      </div>
+
+      <div class="proof" aria-label="Proof points">
+        <article class="sticky">
+          <span class="pin" aria-hidden="true"></span>
+          <p class="big">10M → 3M → 10M</p>
+          <p>Monthly visits to ScrapeHero. A Google core update cut traffic to 3M in under three months. Five months into recovery, it was back at 10M.</p>
+          <a href="#work-recovery">How the recovery went →</a>
+        </article>
+        <article class="sticky">
+          <span class="pin" aria-hidden="true"></span>
+          <p class="big">+200%</p>
+          <p>Google AI Overview citations for ScrapeHero's bottom-of-funnel posts, after I changed how those posts were written.</p>
+          <a href="#work-ai-citations">What changed →</a>
+        </article>
+        <article class="sticky">
+          <span class="pin" aria-hidden="true"></span>
+          <p class="big">~30</p>
+          <p>AI prompts my n8n workflow checks every week to see if ScrapeHero shows up as a cited source.</p>
+          <a href="#work-workflow">See the workflow →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="serp-strip" aria-label="How this site shows up in search">
+    <div class="wrap">
+      <p class="hand">If you googled me, this is the snippet I'd want you to see:</p>
+      <div class="serp">
+        <div class="site"><span class="fav" aria-hidden="true">AC</span><div>Athira C.K.<br><span class="crumb">Portfolio › Work</span></div></div>
+        <span class="t">Athira C.K. | SEO &amp; AEO Specialist for B2B Products</span>
+        <p class="d">SEO and AI search specialist with 9+ years in search. Organic recovery, answer-ready content and AI citation tracking for ScrapeHero and MetricsCart.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <section class="block" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="work-h">Selected work</h2>
+        <p>Two products, one recovery, and the AI search work I've built on top. ScrapeHero leads because it has the clearest numbers.</p>
+      </div>
+
+      <div class="work-grid">
+        <a class="proj p-recovery" href="#work-recovery">
+          <span class="flag">Flagship</span>
+          <div class="txt">
+            <span class="crumbpath">work › scrapehero › organic-recovery</span>
+            <h3>Winning back 7 million monthly visits after a core update</h3>
+            <p class="sum">ScrapeHero's traffic dropped from 10M to 3M a month. I worked out that the drop was sustained, then rebuilt with outreach, backlinks and topic clusters across service segments.</p>
+            <div class="meta"><span><b>Product</b> ScrapeHero</span><span><b>Role</b> Owned SEO</span><span><b>Recovery</b> 5 months</span></div>
+            <span class="go">View case study <span aria-hidden="true">→</span></span>
+          </div>
+          <div>
+            <svg class="chart" viewBox="0 0 520 300" role="img" aria-labelledby="ch1t ch1d">
+              <title id="ch1t">ScrapeHero monthly visits</title>
+              <desc id="ch1d">About 10 million before the update, 3 million under three months later, about 7.8 million at month three of recovery, and 10 million at month five.</desc>
+              <line class="grid" x1="60" y1="30" x2="500" y2="30"/>
+              <line class="grid" x1="60" y1="135" x2="500" y2="135"/>
+              <line class="grid" x1="60" y1="240" x2="500" y2="240"/>
+              <text x="50" y="34" text-anchor="end" font-size="12">10M</text>
+              <text x="50" y="139" text-anchor="end" font-size="12">5M</text>
+              <text x="50" y="244" text-anchor="end" font-size="12">0</text>
+              <path class="area" d="M95 30 L220 177 L350 76.2 L470 30 L470 240 L95 240 Z"/>
+              <path class="line" d="M95 30 L220 177 L350 76.2 L470 30"/>
+              <circle class="pt" cx="95" cy="30" r="7"><title>Before the update: about 10M</title></circle>
+              <circle class="pt low" cx="220" cy="177" r="7"><title>Under 3 months later: 3M</title></circle>
+              <circle class="pt" cx="350" cy="76.2" r="7"><title>Recovery month 3: about 7.8M</title></circle>
+              <circle class="pt" cx="470" cy="30" r="7"><title>Recovery month 5: 10M</title></circle>
+              <text class="val" x="95" y="62" text-anchor="middle">10M</text>
+              <text class="val" x="220" y="210" text-anchor="middle">3M</text>
+              <text class="val" x="350" y="108" text-anchor="middle">7.8M</text>
+              <text class="val" x="470" y="62" text-anchor="middle">10M</text>
+              <text x="95" y="268" text-anchor="middle" font-size="12">Before</text>
+              <text x="220" y="268" text-anchor="middle" font-size="12">&lt;3 months later</text>
+              <text x="350" y="268" text-anchor="middle" font-size="12">Recovery, month 3</text>
+              <text x="470" y="268" text-anchor="middle" font-size="12">Month 5</text>
+            </svg>
+            <p class="chart-note">Monthly visits, Search Console with GA4. Four reported points; lines only join them.</p>
+          </div>
+        </a>
+
+        <a class="proj p-citations" href="#work-ai-citations">
+          <span class="crumbpath">work › scrapehero › ai-citations</span>
+          <h3>Rewriting bottom-of-funnel posts so AI Overviews quote them</h3>
+          <p class="sum">Long-form BOFU articles weren't showing up much in AI Overviews. I added a set of short posts that answer the query straight away.</p>
+          <div class="docs" aria-hidden="true">
+            <div class="doc"><span class="label">Before</span><i></i><i></i><i style="width:80%"></i><i></i><i style="width:90%"></i><i></i><i style="width:60%"></i><small>Long-form guide</small></div>
+            <div class="doc"><span class="label">After</span><i class="ans"></i><i style="width:85%"></i><i></i><i style="width:55%"></i><small>500 to 700 words, answer first</small></div>
+          </div>
+          <div class="meta"><span><b>Result</b> +200% AI Overview citations</span></div>
+          <span class="go">View case study <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="proj p-workflow" href="#work-workflow">
+          <span class="crumbpath">work › ai-seo-workflow</span>
+          <h3>Putting all my SEO data in one place with Claude and MCP</h3>
+          <div class="mini-flow" aria-hidden="true">
+            <div class="row"><span class="chip">Semrush</span><span class="chip">GA4</span><span class="chip">Search Console</span><span class="chip">Clarity</span></div>
+            <div class="row"><span class="arrow">↓ MCP</span><span class="chip c">Claude</span><span class="arrow">→</span><span class="chip">one analysis</span></div>
+            <div class="row"><span class="chip m">n8n</span><span class="arrow">→</span><span class="chip">~30 prompts weekly</span></div>
+          </div>
+          <p class="sum">Four data sources read together, plus a separate weekly check for AI citations.</p>
+          <span class="go">View case study <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="proj p-metrics" href="#work-metricscart">
+          <div class="txt">
+            <span class="crumbpath">work › metricscart › insights-cluster</span>
+            <h3>Building the Insights cluster for a digital shelf analytics SaaS</h3>
+            <p class="sum">Buyers here compare vendors and look up definitions before they ever talk to sales. I built content for each of those moments and kept solution pages on the buyer's job.</p>
+            <div class="meta"><span><b>Product</b> MetricsCart</span><span><b>Site</b> ~500K monthly visits</span></div>
+            <span class="go">View case study <span aria-hidden="true">→</span></span>
+          </div>
+          <div class="tree" aria-hidden="true">
+            <b>Insights</b>
+            <ul><li>Definitional guides</li><li>Competitor comparisons</li><li>Best-tools roundups</li></ul>
+            <b>Solution pages</b>
+            <ul><li>Price intelligence · MAP enforcement</li><li>Content compliance · Digital shelf analytics</li></ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="block" style="padding-top:0" aria-labelledby="stack-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="stack-h">The whole of SEO, crawl to citation</h2>
+        <p>AI search sits on top of the basics. If the site can't be crawled or the intent is wrong, no answer engine is going to quote it.</p>
+      </div>
+      <div class="stack">
+        <div class="stack-row">
+          <h3><span class="sw" style="background:var(--yellow)"></span>Technical</h3>
+          <p>Audits across Core Web Vitals, indexing, schema and XML sitemaps. Fixes shipped with the dev team.</p>
+          <p class="tools">Screaming Frog · GTmetrix · Search Console</p>
+        </div>
+        <div class="stack-row">
+          <h3><span class="sw" style="background:var(--orange)"></span>On-page</h3>
+          <p>Meta tags, heading structure, internal linking and structured data.</p>
+          <p class="tools">WordPress</p>
+        </div>
+        <div class="stack-row">
+          <h3><span class="sw" style="background:var(--pink)"></span>Off-page</h3>
+          <p>Outbound outreach, guest posting and link building. Backlink audits to find the next opportunities.</p>
+          <p class="tools">Semrush · Ahrefs</p>
+        </div>
+        <div class="stack-row">
+          <h3><span class="sw" style="background:var(--mint)"></span>Content &amp; intent</h3>
+          <p>Keyword and intent research, topic clusters, and making sure every query lands on the page built for that buyer.</p>
+          <p class="tools">Semrush · Google Trends</p>
+        </div>
+        <div class="stack-row">
+          <h3><span class="sw" style="background:var(--lilac)"></span>AI search (AEO / GEO)</h3>
+          <p>Answer-ready structure, schema, and comparison and definition pages that AI Overviews and answer engines can pull from and cite.</p>
+          <p class="tools">Claude · ChatGPT · n8n · MCP</p>
+        </div>
+        <div class="stack-row">
+          <h3><span class="sw" style="background:var(--cobalt)"></span>Measurement</h3>
+          <p>Organic tracking, tag and event setup, and behavior data like heatmaps and rage clicks, turned into reports and next steps.</p>
+          <p class="tools">GA4 · Search Console · Clarity · Metabase · Looker Studio · GTM</p>
+        </div>
+      </div>
+      <p class="also"><b>Also on the CV:</b> Google Ads, Meta Ads and social media from my agency and manager years, and leading digital marketing teams at iROID Technologies and Fortune Bucket.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="block" style="padding-top:0" aria-labelledby="exp-h">
+    <div class="wrap exp">
+      <div class="exp-intro">
+        <h2 id="exp-h">Nine years, five teams</h2>
+        <p>I started as a hands-on SEO analyst, moved into leading digital marketing teams, then came back to a specialist role built around SEO and AI search.</p>
+        <p class="hand">agency → in-house → specialist</p>
+      </div>
+      <ol class="timeline">
+        <li class="now"><span class="when">Aug 2024 to now</span><div class="what"><b>AI SEO Strategist · Turbolab Technologies</b><span>SEO and AI search for ScrapeHero and MetricsCart. MCP and n8n workflows.</span></div></li>
+        <li><span class="when">May 2023 to Jul 2024</span><div class="what"><b>Digital Marketing Manager · iROID Technologies</b><span>Owned digital strategy and led the team. SEO, Google Ads, Meta Ads and social for iROID and Irohub.</span></div></li>
+        <li><span class="when">Jan 2021 to May 2023</span><div class="what"><b>Sr. SEO &amp; Digital Marketing Specialist · Fortune Bucket</b><span>Led a team running multi-channel campaigns for client brands.</span></div></li>
+        <li><span class="when">Sep 2018 to Dec 2020</span><div class="what"><b>Senior SEO / SMM Analyst · Phitany Business Solutions</b><span>Keyword research, link building, site structure and monthly client reports.</span></div></li>
+        <li><span class="when">Mar 2017 to Jul 2018</span><div class="what"><b>Jr. SEO Analyst &amp; Digital Marketing · A2 Solutions</b><span>On-page and off-page SEO, landing pages and launch campaigns.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="block" style="padding-top:0" aria-labelledby="ab-h">
+    <div class="wrap about-prev">
+      <blockquote id="ab-h">My foundation is classic SEO. On top of that I now optimize for AI Overviews and answer engines.</blockquote>
+      <div class="txt">
+        <p>Two very different buyers search the space I work in. Businesses want a managed data service. Developers want tools, APIs and how-tos. A lot of my job is making sure each of them lands on the right page, and that the page is clear enough for an AI tool to quote.</p>
+        <p>I've also wired Claude into my SEO data through MCP, so rankings, traffic and user behavior can be read side by side instead of in four tabs.</p>
+        <p><a class="textlink" href="#about">More about me</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="block" id="contact" style="padding-top:0" aria-labelledby="ct-h">
+    <div class="wrap">
+      <div class="contact">
+        <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 4 L58 40 L96 50 L58 60 L50 96 L42 60 L4 50 L42 40 Z" fill="currentColor"/></svg>
+        <h2 id="ct-h">Hiring for SEO or AI search?</h2>
+        <p>I'm open to SEO, AEO and AI search roles. Email is the fastest way to reach me.</p>
+        <div class="contact-row">
+          <div class="email-box"><span id="email">athirasunil23@gmail.com</span><button type="button" id="copy-email" data-copy="athirasunil23@gmail.com">Copy email</button></div>
+          <a class="btn" href="https://www.linkedin.com/in/athirasunil" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="https://drive.google.com/file/d/1B1b0KU0ekX14gW1uaPe5r7jS7pEvxmZq/view?usp=sharing" target="_blank" rel="noopener">Resume PDF <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= CASE: RECOVERY ================= -->
+<main class="view" data-view="work-recovery" hidden>
+  <header class="cs-head">
+    <div class="wrap">
+      <a class="back" href="#work">← All work</a>
+      <span class="crumbpath">work › scrapehero › organic-recovery</span>
+      <h1>Winning back 7 million monthly visits after a core update</h1>
+      <p class="dek">After a Google core update, ScrapeHero's monthly traffic fell from 10M to 3M in under three months. Five months into recovery, it was back at 10M.</p>
+      <dl class="facts">
+        <div><dt class="label">Product</dt><dd>ScrapeHero, web scraping and data services</dd></div>
+        <div><dt class="label">Audience</dt><dd>US business and developer buyers</dd></div>
+        <div><dt class="label">My role</dt><dd>Owned SEO and AI search</dd></div>
+        <div><dt class="label">Measured in</dt><dd>Search Console, with GA4</dd></div>
+      </dl>
+    </div>
+  </header>
+  <div class="wrap cs-body">
+    <nav class="cs-toc label" aria-label="On this page"><a href="#work-recovery">Context</a><span>Problem</span><span>What I did</span><span>Result</span></nav>
+    <article class="prose">
+      <h2>Context</h2>
+      <p>ScrapeHero sells web scraping and data services to US businesses and developers. I own SEO across four lines: web crawling services, custom APIs, ScrapeHero Cloud scrapers and Data Store datasets. I also manage SEO for the POI dataset marketplace.</p>
+      <p>Organic search was a major lead channel for the business, so traffic wasn't a vanity number here.</p>
+
+      <h2>The problem</h2>
+      <p>A Google core update took monthly traffic from about 10M visits to 3M in under three months.</p>
+      <p>The first job was making sure this was a sustained decline and not the usual swing after an update. Once it held, I moved to recovery. Along the way we found faulty links in the programmatic report pages, and I worked with the team on the fixes.</p>
+
+      <figure class="figure">
+        <svg class="chart" viewBox="0 0 520 300" role="img" aria-label="Monthly visits: about 10M before the update, 3M under three months later, about 7.8M at recovery month 3, and 10M at month 5.">
+          <line class="grid" x1="60" y1="30" x2="500" y2="30"/>
+          <line class="grid" x1="60" y1="135" x2="500" y2="135"/>
+          <line class="grid" x1="60" y1="240" x2="500" y2="240"/>
+          <text x="50" y="34" text-anchor="end" font-size="12">10M</text>
+          <text x="50" y="139" text-anchor="end" font-size="12">5M</text>
+          <text x="50" y="244" text-anchor="end" font-size="12">0</text>
+          <path class="area" d="M95 30 L220 177 L350 76.2 L470 30 L470 240 L95 240 Z"/>
+          <path class="line" d="M95 30 L220 177 L350 76.2 L470 30"/>
+          <circle class="pt" cx="95" cy="30" r="7"><title>Before the update: about 10M</title></circle>
+          <circle class="pt low" cx="220" cy="177" r="7"><title>Under 3 months later: 3M</title></circle>
+          <circle class="pt" cx="350" cy="76.2" r="7"><title>Recovery month 3: about 7.8M</title></circle>
+          <circle class="pt" cx="470" cy="30" r="7"><title>Recovery month 5: 10M</title></circle>
+          <text class="val" x="95" y="62" text-anchor="middle">10M</text>
+          <text class="val" x="220" y="210" text-anchor="middle">3M</text>
+          <text class="val" x="350" y="108" text-anchor="middle">7.8M</text>
+          <text class="val" x="470" y="62" text-anchor="middle">10M</text>
+          <text x="95" y="268" text-anchor="middle" font-size="12">Before</text>
+          <text x="220" y="268" text-anchor="middle" font-size="12">&lt;3 months later</text>
+          <text x="350" y="268" text-anchor="middle" font-size="12">Recovery, month 3</text>
+          <text x="470" y="268" text-anchor="middle" font-size="12">Month 5</text>
+        </svg>
+        <figcaption>Monthly visits at four reported points. The spacing between points isn't to scale in time, and the lines only join the points.</figcaption>
+      </figure>
+
+      <h2>What I did</h2>
+      <ol class="steps">
+        <li><div><b>Confirmed the drop was real</b>Checked that the decline was holding before changing anything big.</div></li>
+        <li><div><b>Fixed what was broken</b>Worked with the team on faulty links in the programmatic report pages.</div></li>
+        <li><div><b>Mapped intent across the site</b>Keywords and search intent across tutorials, around 24 blog posts a month and service pages, so informational, comparison and buying queries each had a clear home.</div></li>
+        <li><div><b>Built topic clusters by service segment</b>Clusters around web scraping and data extraction, across multiple service lines.</div></li>
+        <li><div><b>Ran outreach and link building</b>Consistent blog outreach and backlink building, with backlink audits in Semrush and Ahrefs.</div></li>
+      </ol>
+
+      <h2>Result</h2>
+      <div class="callout y"><span class="label">Recovery timeline</span><p><strong>3M</strong> at the low point · <strong>~7.8M</strong> by month three · <strong>10M</strong> by month five.</p></div>
+      <p>The recovery came from all of this together. I can't split it into how much each piece contributed, and I'm not claiming a lead or revenue number from it here.</p>
+    </article>
+  </div>
+  <div class="wrap"><div class="next"><a href="#work">← All work</a><a href="#work-ai-citations"><span>Next</span>BOFU posts and AI citations →</a></div></div>
+</main>
+
+<!-- ================= CASE: AI CITATIONS ================= -->
+<main class="view" data-view="work-ai-citations" hidden>
+  <header class="cs-head">
+    <div class="wrap">
+      <a class="back" href="#work">← All work</a>
+      <span class="crumbpath">work › scrapehero › ai-citations</span>
+      <h1>Rewriting bottom-of-funnel posts so AI Overviews quote them</h1>
+      <p class="dek">ScrapeHero's long-form BOFU articles had limited visibility in Google AI Overviews. A set of shorter, answer-first posts was followed by a 200% rise in AI Overview citations.</p>
+      <dl class="facts">
+        <div><dt class="label">Product</dt><dd>ScrapeHero</dd></div>
+        <div><dt class="label">Content</dt><dd>BOFU blog posts</dd></div>
+        <div><dt class="label">My role</dt><dd>Owned the approach and format</dd></div>
+        <div><dt class="label">Where</dt><dd>Google AI Overviews, ChatGPT, Gemini</dd></div>
+      </dl>
+    </div>
+  </header>
+  <div class="wrap cs-body">
+    <nav class="cs-toc label" aria-label="On this page"><span>Problem</span><span>The new format</span><span>Result</span></nav>
+    <article class="prose">
+      <h2>The problem</h2>
+      <p>BOFU means bottom of funnel: posts for people who are close to buying and comparing their options. ScrapeHero had long-form articles for these queries, and they weren't showing up much in AI Overviews.</p>
+      <p>Long guides are good for reading. They're harder for an AI system to pull one clean answer out of.</p>
+
+      <h2>The new format</h2>
+      <figure class="figure">
+        <div class="docs">
+          <div class="doc"><span class="label">Before</span><i></i><i></i><i style="width:80%"></i><i></i><i style="width:90%"></i><i></i><i style="width:60%"></i><i></i><i style="width:70%"></i><small>Long-form guide, answer somewhere inside</small></div>
+          <div class="doc"><span class="label">After</span><i class="ans"></i><i style="width:85%"></i><i></i><i style="width:55%"></i><small>500 to 700 words, answer at the top</small></div>
+        </div>
+        <figcaption>A sketch of the format change. Not a screenshot of a real post.</figcaption>
+      </figure>
+      <ul>
+        <li><strong>Shorter posts.</strong> A dedicated set of 500 to 700 word BOFU posts, separate from the long guides.</li>
+        <li><strong>Answer first.</strong> Each post answers the user's query directly, then supports it.</li>
+        <li><strong>Phrase-based.</strong> Written around the phrases people actually search and ask, instead of one broad keyword.</li>
+        <li><strong>Structured.</strong> Schema markup and answer-ready structure on tutorials and guides, so answer engines can surface and cite them.</li>
+      </ul>
+
+      <h2>Result</h2>
+      <div class="callout l"><span class="label">After the change</span><p><strong>+200%</strong> AI Overview citations for BOFU posts. ScrapeHero also started getting cited in ChatGPT and Gemini.</p></div>
+      <p>I track citations going forward with the weekly n8n check described in the workflow case study.</p>
+    </article>
+  </div>
+  <div class="wrap"><div class="next"><a href="#work-recovery"><span>Previous</span>← Organic recovery</a><a href="#work-workflow"><span>Next</span>AI-assisted SEO workflow →</a></div></div>
+</main>
+
+<!-- ================= CASE: WORKFLOW ================= -->
+<main class="view" data-view="work-workflow" hidden>
+  <header class="cs-head">
+    <div class="wrap">
+      <a class="back" href="#work">← All work</a>
+      <span class="crumbpath">work › ai-seo-workflow</span>
+      <h1>Putting all my SEO data in one place with Claude and MCP</h1>
+      <p class="dek">Two workflows that solve two different problems. One brings four SEO data sources into a single analysis. The other checks every week whether AI answers cite ScrapeHero.</p>
+      <dl class="facts">
+        <div><dt class="label">Used for</dt><dd>ScrapeHero and MetricsCart</dd></div>
+        <div><dt class="label">Built with</dt><dd>Claude, MCP servers, n8n</dd></div>
+        <div><dt class="label">Data</dt><dd>Semrush, GA4, Search Console, Clarity</dd></div>
+        <div><dt class="label">Cadence</dt><dd>Citation check runs weekly</dd></div>
+      </dl>
+    </div>
+  </header>
+  <div class="wrap cs-body">
+    <nav class="cs-toc label" aria-label="On this page"><span>Why</span><span>How it works</span><span>Where it stands</span></nav>
+    <article class="prose">
+      <h2>Why I built it</h2>
+      <p>Rankings live in Semrush. Traffic lives in GA4. Queries live in Search Console. Behavior lives in Clarity. Each one answers a different question, and switching between four tools to answer one makes it easy to miss how they connect.</p>
+      <p>Checking AI answers for citations by hand is the other problem. It's slow and nobody does it consistently.</p>
+
+      <h2>How it works</h2>
+      <figure class="figure flow" aria-label="Workflow diagram">
+        <div class="flow-lane">
+          <span class="label">Workflow 1 · Analysis</span>
+          <div class="flow-row">
+            <div class="flow-col">
+              <div class="node"><b>Semrush</b><small>rankings, backlinks</small></div>
+              <div class="node"><b>GA4</b><small>traffic</small></div>
+              <div class="node"><b>Search Console</b><small>search queries</small></div>
+              <div class="node"><b>Microsoft Clarity</b><small>heatmaps, rage clicks</small></div>
+            </div>
+            <div class="arrow" aria-hidden="true">→</div>
+            <div class="node hub"><b>MCP servers → Claude</b><small>reads all four together</small></div>
+            <div class="arrow" aria-hidden="true">→</div>
+            <div class="node out"><b>One analysis</b><small>ranking, traffic, query and behavior data side by side</small></div>
+          </div>
+        </div>
+        <div class="flow-lane">
+          <span class="label">Workflow 2 · AI citation check</span>
+          <div class="flow-row">
+            <div class="node"><b>~30 prompts</b><small>across search-intent clusters</small></div>
+            <div class="arrow" aria-hidden="true">→</div>
+            <div class="node hub"><b>n8n, weekly</b><small>runs the prompts</small></div>
+            <div class="arrow" aria-hidden="true">→</div>
+            <div class="node out"><b>Is ScrapeHero cited?</b><small>results for me to review</small></div>
+          </div>
+        </div>
+        <figcaption>The two workflows run separately. The analysis one is on demand. The citation check runs every week.</figcaption>
+      </figure>
+      <ul>
+        <li><strong>Day to day,</strong> I use Claude and ChatGPT for keyword research, search intent analysis and SEO content support.</li>
+        <li><strong>The workflows collect and line up the data.</strong> Deciding what to fix next is still my call.</li>
+      </ul>
+
+      <h2>Where it stands</h2>
+      <div class="callout m"><span class="label">Honest status</span><p>The n8n and Claude agents are basic for now. They handle repetitive SEO tasks, and automation is the part of the role I'm actively expanding.</p></div>
+    </article>
+  </div>
+  <div class="wrap"><div class="next"><a href="#work-ai-citations"><span>Previous</span>← BOFU posts and AI citations</a><a href="#work-metricscart"><span>Next</span>MetricsCart Insights cluster →</a></div></div>
+</main>
+
+<!-- ================= CASE: METRICSCART ================= -->
+<main class="view" data-view="work-metricscart" hidden>
+  <header class="cs-head">
+    <div class="wrap">
+      <a class="back" href="#work">← All work</a>
+      <span class="crumbpath">work › metricscart › insights-cluster</span>
+      <h1>Building the Insights cluster for a digital shelf analytics SaaS</h1>
+      <p class="dek">MetricsCart sells digital shelf analytics to consumer brands and e-commerce agencies. Its buyers do a lot of research before they talk to sales. The goal was to be the source Google and AI tools reach for at that stage.</p>
+      <dl class="facts">
+        <div><dt class="label">Product</dt><dd>MetricsCart, digital shelf analytics SaaS</dd></div>
+        <div><dt class="label">Audience</dt><dd>Consumer brands, e-commerce agencies</dd></div>
+        <div><dt class="label">My role</dt><dd>Owned SEO and AI search</dd></div>
+        <div><dt class="label">Site</dt><dd>~500K monthly visits</dd></div>
+      </dl>
+    </div>
+  </header>
+  <div class="wrap cs-body">
+    <nav class="cs-toc label" aria-label="On this page"><span>Problem</span><span>Architecture</span><span>Status</span></nav>
+    <article class="prose">
+      <h2>The problem</h2>
+      <p>People researching digital shelf analytics look for definitions first, then compare vendors, then build a shortlist. If MetricsCart isn't there at each step, a competitor is. Organic search was a major lead channel here too.</p>
+
+      <h2>The architecture</h2>
+      <figure class="figure">
+        <div class="tree">
+          <b>Insights cluster</b>
+          <ul>
+            <li><b>Definitional guides</b> explain the category and its terms</li>
+            <li><b>Competitor comparisons</b> for buyers weighing vendors</li>
+            <li><b>Best-tools roundups</b> for buyers building a shortlist</li>
+          </ul>
+          <b>Solution pages</b>
+          <ul>
+            <li>Price intelligence</li>
+            <li>MAP enforcement</li>
+            <li>Content compliance</li>
+            <li>Digital shelf analytics</li>
+          </ul>
+        </div>
+        <figcaption>Each content type maps to a stage of buyer research.</figcaption>
+      </figure>
+      <ul>
+        <li><strong>Insights</strong> covers the research stage, from "what is this" to "which tool".</li>
+        <li><strong>Solution pages</strong> stay focused on the buyer's job instead of feature lists.</li>
+        <li><strong>AEO and GEO</strong> on the comparison and definition pages, so AI search tools can extract and cite them.</li>
+      </ul>
+
+      <h2>Status</h2>
+      <div class="callout o"><span class="label">Implementation case study</span><p>This one is about how the cluster was planned and built. Outcome numbers for it aren't published here yet.</p></div>
+    </article>
+  </div>
+  <div class="wrap"><div class="next"><a href="#work-workflow"><span>Previous</span>← AI-assisted SEO workflow</a><a href="#work"><span>Back to</span>All work →</a></div></div>
+</main>
+
+<!-- ================= ABOUT ================= -->
+<main class="view" data-view="about" hidden>
+  <header class="cs-head">
+    <div class="wrap">
+      <span class="crumbpath">about</span>
+      <h1>Hands-on SEO, then teams, then back to search</h1>
+      <p class="dek">I'm Athira, an SEO and AEO specialist based in Kochi. I've worked in search since 2017, across agencies and in-house teams.</p>
+    </div>
+  </header>
+  <div class="wrap cs-body">
+    <nav class="cs-toc label" aria-label="On this page"><span>Career</span><span>Now</span><span>Education</span></nav>
+    <article class="prose">
+      <h2>How I got here</h2>
+      <p>I started at A2 Solutions as a junior SEO analyst, doing on-page and off-page work and supporting PPC and social campaigns for product launches.</p>
+      <p>At Phitany Business Solutions I moved deeper into keyword research, link building and site structure, managed XML sitemaps and webmaster tools, and sent clients monthly reports.</p>
+      <p>Fortune Bucket was where I started leading. I ran a team delivering multi-channel campaigns for client brands, set SEO requirements and cleaned up internal processes.</p>
+      <p>At iROID Technologies I was Digital Marketing Manager. I owned the digital strategy, led the team and set development plans for each specialist, and ran SEO, Google Ads, Meta Ads and social for iROID and the Irohub project.</p>
+      <p>Then I went back to specialist work. At Turbolab Technologies I own SEO and AI search for ScrapeHero and MetricsCart.</p>
+
+      <h2>What I'm focused on now</h2>
+      <ul>
+        <li>AI search visibility in Google AI Overviews and answer engines</li>
+        <li>Answer-led content for buyers close to a decision</li>
+        <li>Technical SEO as the base everything else sits on</li>
+        <li>Workflows that make SEO analysis more systematic</li>
+      </ul>
+
+      <h2>Education and certifications</h2>
+      <p><strong>BE, Electronics &amp; Communication Engineering</strong>, Salem Engineering College, Salem (2011 to 2015)</p>
+      <p>Google Analytics Certification · Google Ads Certification · Inbound Certification, HubSpot Academy</p>
+      <p><a class="textlink" href="#resume">Read the full resume</a></p>
+    </article>
+  </div>
+</main>
+
+<!-- ================= RESUME ================= -->
+<main class="view" data-view="resume" hidden>
+  <header class="cs-head">
+    <div class="wrap">
+      <span class="crumbpath">resume</span>
+      <h1>Resume</h1>
+      <p class="dek">SEO Specialist · AI Search (AEO / GEO) · Technical SEO · B2B SaaS</p>
+      <div class="r-contact">
+        <span>Kochi, Kerala, India</span>
+        <span style="user-select:all">athirasunil23@gmail.com</span>
+        <a href="https://www.linkedin.com/in/athirasunil" target="_blank" rel="noopener">linkedin.com/in/athirasunil ↗</a>
+      </div>
+      <div class="ctas"><a class="btn primary" href="https://drive.google.com/file/d/1B1b0KU0ekX14gW1uaPe5r7jS7pEvxmZq/view?usp=sharing" target="_blank" rel="noopener">Download resume (PDF) <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="resume">
+      <h2>Summary</h2>
+      <p style="margin-top:14px;color:var(--ink-2);max-width:68ch">SEO and AI search strategist with 9+ years across agency and in-house roles. At Turbolab Technologies I own SEO and AI search for two B2B data products, ScrapeHero and MetricsCart, through topic clusters, technical SEO and AEO / GEO for Google AI Overviews and answer engines. I build AI-assisted SEO workflows that connect Claude to Semrush, GA4, Search Console and Clarity via MCP, and automate SEO tasks with n8n. Before this I led digital marketing teams across SEO, Google Ads and social media.</p>
+
+      <h2>Experience</h2>
+      <div class="r-job"><span class="when">Aug 2024 to now</span><div><h3>AI SEO Strategist <span>· Turbolab Technologies</span></h3><ul>
+        <li>Own SEO and AI search strategy for ScrapeHero and MetricsCart, combining topic clusters, technical SEO fixes and AEO / GEO</li>
+        <li>Built an AI-assisted analysis workflow connecting Claude to Semrush, GA4, Search Console and Microsoft Clarity via MCP servers</li>
+        <li>Automate repetitive SEO tasks with n8n and Claude agent workflows</li>
+        <li>Run technical audits across Core Web Vitals, indexing and schema; improve on-page SEO through meta tags, headings, internal linking and structured data</li>
+        <li>Drive off-page SEO through outreach, guest posting and link building; audit backlink profiles in Semrush and Ahrefs</li>
+        <li>Track organic performance in GA4, Search Console, Clarity and Metabase and turn it into reports and action plans</li>
+        <li>Work with content and development teams to ship SEO fixes</li>
+      </ul></div></div>
+      <div class="r-job"><span class="when">May 2023 to Jul 2024</span><div><h3>Digital Marketing Manager <span>· iROID Technologies</span></h3><ul>
+        <li>Owned digital strategy and led the digital marketing team, setting development plans and goals for each specialist</li>
+        <li>Set up Google Ads campaigns and led social media strategy and ad creative</li>
+        <li>Drove on-page and off-page SEO for iROID Technologies and the Irohub project</li>
+      </ul></div></div>
+      <div class="r-job"><span class="when">Jan 2021 to May 2023</span><div><h3>Sr. SEO &amp; Digital Marketing Specialist <span>· Fortune Bucket</span></h3><ul>
+        <li>Led a team delivering multi-channel campaigns for client brands and owned their digital strategy</li>
+        <li>Set goals, built strategies and analyzed performance with clients</li>
+        <li>Defined SEO requirements, tasks and resources, and streamlined internal processes</li>
+      </ul></div></div>
+      <div class="r-job"><span class="when">Sep 2018 to Dec 2020</span><div><h3>Senior SEO / SMM Analyst <span>· Phitany Business Solutions</span></h3><ul>
+        <li>Researched keywords against client goals to optimize content and find new ranking opportunities</li>
+        <li>Ran link building campaigns that improved client rankings on Google and Bing</li>
+        <li>Advised on site structure and managed XML sitemaps and webmaster tools</li>
+        <li>Managed client social media (LinkedIn, Facebook, X) with monthly reports</li>
+      </ul></div></div>
+      <div class="r-job"><span class="when">Mar 2017 to Jul 2018</span><div><h3>Jr. SEO Analyst &amp; Digital Marketing <span>· A2 Solutions</span></h3><ul>
+        <li>On-page and off-page SEO for rankings, traffic and brand awareness</li>
+        <li>Supported PPC and social campaigns and optimized landing pages and Google Ads for launches</li>
+        <li>Prepared monthly SEO, social and ads reports</li>
+      </ul></div></div>
+
+      <h2>Skills and tools</h2>
+      <dl class="r-skills">
+        <dt>SEO</dt><dd>Technical audits (Core Web Vitals, indexing, schema, XML sitemaps), keyword research, intent mapping, on-page and off-page SEO, link building, outreach, guest posting, backlink audits, topic clusters</dd>
+        <dt>AI search</dt><dd>AEO, GEO, content for Google AI Overviews and answer engines, structured data for AI search, voice search</dd>
+        <dt>AI &amp; automation</dt><dd>Claude, ChatGPT, MCP integrations (Semrush, GA4, Search Console, Clarity), n8n workflows</dd>
+        <dt>Analytics</dt><dd>GA4, Search Console, Microsoft Clarity, Metabase, Looker Studio, Google Tag Manager, event tracking, heatmaps and rage clicks</dd>
+        <dt>SEO tools</dt><dd>Semrush, Ahrefs, Screaming Frog, GTmetrix, Google Trends, WordPress, Excel</dd>
+        <dt>Paid &amp; social</dt><dd>Google Ads, PPC, SEM, social media marketing</dd>
+        <dt>Leadership</dt><dd>Team leadership, mentoring, client strategy, cross-functional work with content and dev teams</dd>
+      </dl>
+
+      <h2>Education</h2>
+      <div class="r-job"><span class="when">2011 to 2015</span><div><h3>BE, Electronics &amp; Communication Engineering <span>· Salem Engineering College, Salem</span></h3></div></div>
+
+      <h2>Certifications</h2>
+      <p style="margin-top:14px;color:var(--ink-2)">Google Analytics Certification, Google · Google Ads Certification, Google · Inbound Certification, HubSpot Academy</p>
+      <div style="height:56px"></div>
+    </div>
+  </div>
+</main>
+
+</div>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Athira C.K. · SEO &amp; AEO Specialist · Kochi, India</span>
+    <span><span style="user-select:all">athirasunil23@gmail.com</span> · <a href="https://www.linkedin.com/in/athirasunil" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="#resume">Resume</a> · <a href="https://drive.google.com/file/d/1B1b0KU0ekX14gW1uaPe5r7jS7pEvxmZq/view?usp=sharing" target="_blank" rel="noopener">PDF ↗</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var views = Array.prototype.slice.call(document.querySelectorAll('.view'));
+  var names = views.map(function(v){ return v.getAttribute('data-view'); });
+  var homeAnchors = ['work','contact','home',''];
+  var titles = {
+    'home':'Athira C.K. | SEO & AEO Specialist',
+    'work-recovery':'ScrapeHero organic recovery | Athira C.K.',
+    'work-ai-citations':'BOFU posts and AI citations | Athira C.K.',
+    'work-workflow':'AI-assisted SEO workflow | Athira C.K.',
+    'work-metricscart':'MetricsCart Insights cluster | Athira C.K.',
+    'about':'About | Athira C.K.',
+    'resume':'Resume | Athira C.K.'
+  };
+  function route(){
+    var h = (location.hash || '').replace('#','');
+    var view = names.indexOf(h) > -1 ? h : 'home';
+    views.forEach(function(v){ v.hidden = v.getAttribute('data-view') !== view; });
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      var n = a.getAttribute('data-nav');
+      var on = (n === view) || (n === 'work' && view.indexOf('work-') === 0);
+      if(on) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+    });
+    document.title = titles[view] || titles.home;
+    if(view === 'home' && (h === 'work' || h === 'contact')){
+      var el = document.getElementById(h);
+      if(el) requestAnimationFrame(function(){ el.scrollIntoView(); });
+    } else {
+      window.scrollTo(0,0);
+    }
+  }
+  window.addEventListener('hashchange', route);
+  route();
+
+  var btn = document.getElementById('copy-email');
+  if(btn){
+    btn.addEventListener('click', function(){
+      var txt = btn.getAttribute('data-copy');
+      function selectIt(){
+        var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        btn.textContent = 'Selected, press Ctrl/Cmd+C';
+      }
+      try{
+        navigator.clipboard.writeText(txt).then(function(){
+          btn.textContent = 'Copied';
+          setTimeout(function(){ btn.textContent = 'Copy email'; }, 1800);
+        }, selectIt);
+      }catch(e){ selectIt(); }
+    });
+  }
+})();
+</script>
+
+</body></html>
